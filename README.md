@@ -1,3 +1,3 @@
 # News Room
 
-Working project...
+Website to browse news in real time
