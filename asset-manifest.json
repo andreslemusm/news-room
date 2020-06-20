@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7d58e69.chunk.css",
-    "main.js": "/static/js/main.7d43ceae.chunk.js",
-    "main.js.map": "/static/js/main.7d43ceae.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cbb54062.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cbb54062.js.map",
-    "static/css/2.3a221eca.chunk.css": "/static/css/2.3a221eca.chunk.css",
-    "static/js/2.9b5a13fb.chunk.js": "/static/js/2.9b5a13fb.chunk.js",
-    "static/js/2.9b5a13fb.chunk.js.map": "/static/js/2.9b5a13fb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6fca741daa6e8748ec7afea845311eb3.js": "/precache-manifest.6fca741daa6e8748ec7afea845311eb3.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.3a221eca.chunk.css.map": "/static/css/2.3a221eca.chunk.css.map",
-    "static/css/main.d7d58e69.chunk.css.map": "/static/css/main.d7d58e69.chunk.css.map",
-    "static/js/2.9b5a13fb.chunk.js.LICENSE.txt": "/static/js/2.9b5a13fb.chunk.js.LICENSE.txt",
-    "static/media/image-not-found.png": "/static/media/image-not-found.002f5fac.png"
+    "main.css": "/news-room/static/css/main.d7d58e69.chunk.css",
+    "main.js": "/news-room/static/js/main.063c0f4c.chunk.js",
+    "main.js.map": "/news-room/static/js/main.063c0f4c.chunk.js.map",
+    "runtime-main.js": "/news-room/static/js/runtime-main.4bab7198.js",
+    "runtime-main.js.map": "/news-room/static/js/runtime-main.4bab7198.js.map",
+    "static/css/2.3a221eca.chunk.css": "/news-room/static/css/2.3a221eca.chunk.css",
+    "static/js/2.9b5a13fb.chunk.js": "/news-room/static/js/2.9b5a13fb.chunk.js",
+    "static/js/2.9b5a13fb.chunk.js.map": "/news-room/static/js/2.9b5a13fb.chunk.js.map",
+    "index.html": "/news-room/index.html",
+    "precache-manifest.141d8947e43bb981e9b9138e149738d2.js": "/news-room/precache-manifest.141d8947e43bb981e9b9138e149738d2.js",
+    "service-worker.js": "/news-room/service-worker.js",
+    "static/css/2.3a221eca.chunk.css.map": "/news-room/static/css/2.3a221eca.chunk.css.map",
+    "static/css/main.d7d58e69.chunk.css.map": "/news-room/static/css/main.d7d58e69.chunk.css.map",
+    "static/js/2.9b5a13fb.chunk.js.LICENSE.txt": "/news-room/static/js/2.9b5a13fb.chunk.js.LICENSE.txt",
+    "static/media/image-not-found.png": "/news-room/static/media/image-not-found.002f5fac.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbb54062.js",
+    "static/js/runtime-main.4bab7198.js",
     "static/css/2.3a221eca.chunk.css",
     "static/js/2.9b5a13fb.chunk.js",
     "static/css/main.d7d58e69.chunk.css",
-    "static/js/main.7d43ceae.chunk.js"
+    "static/js/main.063c0f4c.chunk.js"
   ]
 }
