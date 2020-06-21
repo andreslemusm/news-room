@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/news-room/static/css/main.d7d58e69.chunk.css",
-    "main.js": "/news-room/static/js/main.063c0f4c.chunk.js",
-    "main.js.map": "/news-room/static/js/main.063c0f4c.chunk.js.map",
+    "main.js": "/news-room/static/js/main.b7005ebc.chunk.js",
+    "main.js.map": "/news-room/static/js/main.b7005ebc.chunk.js.map",
     "runtime-main.js": "/news-room/static/js/runtime-main.4bab7198.js",
     "runtime-main.js.map": "/news-room/static/js/runtime-main.4bab7198.js.map",
-    "static/css/2.3a221eca.chunk.css": "/news-room/static/css/2.3a221eca.chunk.css",
-    "static/js/2.9b5a13fb.chunk.js": "/news-room/static/js/2.9b5a13fb.chunk.js",
-    "static/js/2.9b5a13fb.chunk.js.map": "/news-room/static/js/2.9b5a13fb.chunk.js.map",
+    "static/css/2.74a309f3.chunk.css": "/news-room/static/css/2.74a309f3.chunk.css",
+    "static/js/2.8872b05c.chunk.js": "/news-room/static/js/2.8872b05c.chunk.js",
+    "static/js/2.8872b05c.chunk.js.map": "/news-room/static/js/2.8872b05c.chunk.js.map",
     "index.html": "/news-room/index.html",
-    "precache-manifest.141d8947e43bb981e9b9138e149738d2.js": "/news-room/precache-manifest.141d8947e43bb981e9b9138e149738d2.js",
+    "precache-manifest.51040002c1822869526ca227d748d7c2.js": "/news-room/precache-manifest.51040002c1822869526ca227d748d7c2.js",
     "service-worker.js": "/news-room/service-worker.js",
-    "static/css/2.3a221eca.chunk.css.map": "/news-room/static/css/2.3a221eca.chunk.css.map",
+    "static/css/2.74a309f3.chunk.css.map": "/news-room/static/css/2.74a309f3.chunk.css.map",
     "static/css/main.d7d58e69.chunk.css.map": "/news-room/static/css/main.d7d58e69.chunk.css.map",
-    "static/js/2.9b5a13fb.chunk.js.LICENSE.txt": "/news-room/static/js/2.9b5a13fb.chunk.js.LICENSE.txt",
+    "static/js/2.8872b05c.chunk.js.LICENSE.txt": "/news-room/static/js/2.8872b05c.chunk.js.LICENSE.txt",
     "static/media/image-not-found.png": "/news-room/static/media/image-not-found.002f5fac.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4bab7198.js",
-    "static/css/2.3a221eca.chunk.css",
-    "static/js/2.9b5a13fb.chunk.js",
+    "static/css/2.74a309f3.chunk.css",
+    "static/js/2.8872b05c.chunk.js",
     "static/css/main.d7d58e69.chunk.css",
-    "static/js/main.063c0f4c.chunk.js"
+    "static/js/main.b7005ebc.chunk.js"
   ]
 }
