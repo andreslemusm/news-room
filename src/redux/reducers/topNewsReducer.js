@@ -1,12 +1,8 @@
-import {
-  FETCH_TOP_NEWS_PENDING,
-  FETCH_TOP_NEWS_ERROR,
-  FETCH_TOP_NEWS_SUCCESS,
-} from '../actions';
+import { FETCH_TOP_NEWS_PENDING, FETCH_TOP_NEWS_SUCCESS, FETCH_TOP_NEWS_ERROR } from '../actions';
 
 const INITIAL_STATE = {
   loading: false,
-  articles: [],
+  categories: {},
   error: null,
 };
 
@@ -18,11 +14,16 @@ export default function topNewsReducer(state = INITIAL_STATE, action) {
         loading: true,
       };
     case FETCH_TOP_NEWS_SUCCESS:
+      const { data, categories } = action.payload;
       return {
         ...state,
         loading: false,
-        articles: action.payload.articles,
-        results: action.payload.totalResults,
+        categories: {
+          ...state.categories,
+          ...data.reduce((accum, categoryData, index) => {
+            return { ...accum, [categories[index].name]: categoryData.results };
+          }, {}),
+        },
       };
     case FETCH_TOP_NEWS_ERROR:
       return {

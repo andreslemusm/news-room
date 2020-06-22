@@ -3,51 +3,60 @@ import PropTypes from 'prop-types';
 import Layout from '../../components/Layout';
 import { connect } from 'react-redux';
 import Headline from './components/Headline';
-import fetchHeadlines from '../../redux/actions/headlinesActions';
+import fetchTopNews from '../../redux/actions/topNewsActions';
+import Error from '../../components/Error';
+import Spinner from '../../components/Spinner';
+import { isUndefined } from '../../utils';
+
+const renderArticlesFrom = (data, sections) => {
+  if (isUndefined(data)) {
+    return <></>;
+  } else {
+    return sections.map((section) => <Headline articles={data[section.name]} key={section.name} category={section} />);
+  }
+};
+
+const renderContentFrom = (data, loading, sections) => {
+  if (loading === true) {
+    return <Spinner />;
+  } else {
+    return renderArticlesFrom(data, sections);
+  }
+};
 
 Home.propTypes = {
-  topNews: PropTypes.arrayOf(PropTypes.object),
+  topNews: PropTypes.objectOf(PropTypes.array),
   fetchTopNews: PropTypes.func,
 };
 
-function Home({ categories, fetchHeadlines, headlines }) {
-  // eslint-disable-next-line
+function Home({ categories, fetchTopNews, topNews, loading, error }) {
   useEffect(() => {
-    categories.map((category) => {
-      fetchHeadlines(category.name);
-    });
-  }, []);
+    fetchTopNews(categories);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categories]);
 
   return (
     <Layout>
-      <div className="mb5 mt5">
-        {Object.keys(headlines).length === 6 &&
-          categories.map((category, index) => (
-            <Headline
-              articles={headlines[category.name]}
-              key={index}
-              category={category}
-            />
-          ))}
-      </div>
+      <div className="mb5 mt5">{!isUndefined(error) ? <Error /> : renderContentFrom(topNews, loading, categories)}</div>
     </Layout>
   );
 }
 
 const mapStateToProps = (state) => {
-  const { categories, headlines } = state;
+  const { categories, topNews } = state;
+
   return {
     categories,
-    loading: headlines.loading,
-    error: headlines.error,
-    headlines: headlines.categories,
+    loading: topNews.loading,
+    error: topNews.error,
+    topNews: topNews.categories,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchHeadlines: (category) => {
-      dispatch(fetchHeadlines(category));
+    fetchTopNews: (categories) => {
+      dispatch(fetchTopNews(categories));
     },
   };
 };

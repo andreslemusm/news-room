@@ -7,11 +7,7 @@ export default function Footer({ sections }) {
       <nav className="f6 order-1-l dn db-l">
         <ul className="list pa0">
           {sections.map((section, index) => (
-            <Link
-              className="white-80 mh2 hover-white ttc"
-              key={index}
-              to={`/${section.name}`}
-            >
+            <Link className="white-80 mh2 hover-white ttc" key={index} to={`/${section.name}`}>
               <li className="dib">{section.name}</li>
             </Link>
           ))}
@@ -62,9 +58,7 @@ export default function Footer({ sections }) {
           </svg>
         </a>
       </div>
-      <p className="f7 f6-ns white-80">
-        &copy; 2020 Andres Lemus. All Rights Reserved.
-      </p>
+      <p className="f7 f6-ns white-80">&copy; 2020 Andres Lemus. All Rights Reserved.</p>
     </footer>
   );
 }

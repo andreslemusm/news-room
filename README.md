@@ -1,3 +1,3 @@
 # News Room
 
-Website to browse news in real time
+Website to browse your favorite news in real time

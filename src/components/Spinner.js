@@ -2,16 +2,18 @@ import React from 'react';
 
 export default function Spinner() {
   return (
-    <div className="lds-grid center mv5">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className="vh-75 flex items-center">
+      <div className="lds-grid center">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 }
