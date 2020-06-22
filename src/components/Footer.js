@@ -16,7 +16,7 @@ export default function Footer({ sections }) {
       <div className="order-2-ns">
         <a
           className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc br2 pa2"
-          href="https://www.linkedin.com/in/andres-camilo-lemus-madrid-a7605a16b/"
+          href="https://www.linkedin.com/in/andresclm"
           title="LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
