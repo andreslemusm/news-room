@@ -12,3 +12,4 @@ Website to browse your favorite news in real time: [Visit](https://andresclm.git
 ## Acknowledgments
 
 * [Ivan Languev](https://www.behance.net/gallery/93024099/The-Times-news-site-redesign) - Design inspiration
+* [The New York Times API](https://developer.nytimes.com/)
