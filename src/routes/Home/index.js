@@ -33,7 +33,7 @@ function Home({ categories, fetchTopNews, topNews, loading, error }) {
   useEffect(() => {
     fetchTopNews(categories);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categories]);
+  }, []);
 
   return (
     <Layout>

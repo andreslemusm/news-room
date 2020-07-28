@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../../components/Layout';
 import Article from './components/Article';
@@ -8,6 +8,7 @@ import { maxPageOf, isUndefined, firstItemFrom, lastItemFrom } from '../../utils
 import { toast } from 'react-toastify';
 import Spinner from '../../components/Spinner';
 import Error from '../../components/Error';
+import fetchTopNews from '../../redux/actions/topNewsActions';
 
 const renderArticlesFrom = (data, page) => {
   if (isUndefined(data)) {
@@ -33,10 +34,17 @@ Category.propTypes = {
   loading: PropTypes.bool,
 };
 
-function Category({ categories, error, loading }) {
+function Category({ categories, error, loading, fetchTopNews }) {
   const { category, page } = useParams();
   const { [category]: articles } = categories;
-  const results = articles !== undefined && articles.length;
+  const results = !isUndefined(articles) && articles.length;
+
+  useEffect(() => {
+    if(!(category in categories)){
+      fetchTopNews([{name: category}]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category]);
 
   if (!isUndefined(error)) {
     toast.error(`Error: ${error}`, {
@@ -103,4 +111,12 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Category);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchTopNews: (categories) => {
+      dispatch(fetchTopNews(categories));
+    },
+  };
+};
+
+export default connect(mapStateToProps,mapDispatchToProps)(Category);
