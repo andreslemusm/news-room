@@ -1,6 +1,6 @@
 # MR NEWS
 
-Website to browse your favorite news in real time: [Visit](https://andresclm.github.io/news-room/)
+Website to browse your favorite news in real time: [Visit](https://andreslemusm.github.io/news-room/)
 
 ## Built With
 
